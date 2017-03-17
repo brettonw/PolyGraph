@@ -97,144 +97,51 @@
 {
     m_graph = [Graph new];
     
-    NSUInteger  cher = [m_graph addNode];
-    NSUInteger  andy = [m_graph addNode];
-    NSUInteger  kieran = [m_graph addNode];
-    NSUInteger  kashmira = [m_graph addNode];
-    NSUInteger  sappharia = [m_graph addNode];
-    NSUInteger  ida = [m_graph addNode];
-    NSUInteger  karina = [m_graph addNode];
     NSUInteger  bret = [m_graph addNode];
-    NSUInteger  greg = [m_graph addNode];
-    NSUInteger  russ = [m_graph addNode];
-    NSUInteger  james = [m_graph addNode];
-    NSUInteger  nicole = [m_graph addNode];
-    NSUInteger  teresa = [m_graph addNode];
-    NSUInteger  molly = [m_graph addNode];
-    NSUInteger  janie = [m_graph addNode];
-    NSUInteger  dena = [m_graph addNode];
-    NSUInteger  scott = [m_graph addNode];
     NSUInteger  roxy = [m_graph addNode];
-    NSUInteger  stephen = [m_graph addNode];
-    NSUInteger  lochai = [m_graph addNode];
-    NSUInteger  william = [m_graph addNode];
-    NSUInteger  dusty = [m_graph addNode];
-    NSUInteger  lisa = [m_graph addNode];
-    NSUInteger  emily = [m_graph addNode];
-    NSUInteger  lara = [m_graph addNode];
-    NSUInteger  kelly = [m_graph addNode];
-    NSUInteger  ava = [m_graph addNode];
+    NSUInteger  eileen = [m_graph addNode];
+    NSUInteger  martine = [m_graph addNode];
+    NSUInteger  rain = [m_graph addNode];
+    NSUInteger  christen = [m_graph addNode];
+    NSUInteger  danielle = [m_graph addNode];
+    NSUInteger  oliver = [m_graph addNode];
+    NSUInteger  ame = [m_graph addNode];
+    NSUInteger  david = [m_graph addNode];
+    NSUInteger  brian = [m_graph addNode];
+    NSUInteger  joh = [m_graph addNode];
     
     NSArray*    nodes = m_graph.nodes;
-    /*
-     ((GraphNode*) [nodes objectAtIndex:bret]).name = @"Bret";
-     ((GraphNode*) [nodes objectAtIndex:roxy]).name = @"Roxy";
-     ((GraphNode*) [nodes objectAtIndex:sappharia]).name = @"Sappharia";
-     ((GraphNode*) [nodes objectAtIndex:ida]).name = @"Ida";
-     ((GraphNode*) [nodes objectAtIndex:kashmira]).name = @"Kashmira";
-     ((GraphNode*) [nodes objectAtIndex:dena]).name = @"Dena";
-     ((GraphNode*) [nodes objectAtIndex:lisa]).name = @"Lisa";
-     ((GraphNode*) [nodes objectAtIndex:emily]).name = @"Emily";
-     ((GraphNode*) [nodes objectAtIndex:karina]).name = @"Karina";
-     ((GraphNode*) [nodes objectAtIndex:janie]).name = @"Janie";
-     ((GraphNode*) [nodes objectAtIndex:stephen]).name = @"Stephen";
-     ((GraphNode*) [nodes objectAtIndex:lochai]).name = @"Lochai";
-     ((GraphNode*) [nodes objectAtIndex:william]).name = @"William";
-     ((GraphNode*) [nodes objectAtIndex:greg]).name = @"Greg";
-     ((GraphNode*) [nodes objectAtIndex:scott]).name = @"Scott";
-     ((GraphNode*) [nodes objectAtIndex:dusty]).name = @"Dusty";
-     ((GraphNode*) [nodes objectAtIndex:russ]).name = @"Russ";
-     ((GraphNode*) [nodes objectAtIndex:cher]).name = @"Cher";
-     ((GraphNode*) [nodes objectAtIndex:andy]).name = @"Andy";
-     ((GraphNode*) [nodes objectAtIndex:kieran]).name = @"Kieran";
-     ((GraphNode*) [nodes objectAtIndex:james]).name = @"James";
-     ((GraphNode*) [nodes objectAtIndex:nicole]).name = @"Nicole";
-     ((GraphNode*) [nodes objectAtIndex:teresa]).name = @"Teresa";
-     ((GraphNode*) [nodes objectAtIndex:molly]).name = @"Molly";
-     ((GraphNode*) [nodes objectAtIndex:lara]).name = @"Lara";
-     ((GraphNode*) [nodes objectAtIndex:kelly]).name = @"Kelly";
-     ((GraphNode*) [nodes objectAtIndex:ava]).name = @"Ava";
-     */
-    ((GraphNode*) [nodes objectAtIndex:bret]).name = @"John";
-    ((GraphNode*) [nodes objectAtIndex:roxy]).name = @"Joan";
-    ((GraphNode*) [nodes objectAtIndex:sappharia]).name = @"Cindy";
-    ((GraphNode*) [nodes objectAtIndex:ida]).name = @"Susan";
-    ((GraphNode*) [nodes objectAtIndex:kashmira]).name = @"Debbie";
-    ((GraphNode*) [nodes objectAtIndex:dena]).name = @"Donna";
-    ((GraphNode*) [nodes objectAtIndex:lisa]).name = @"Tracy";
-    ((GraphNode*) [nodes objectAtIndex:emily]).name = @"Sarah";
-    ((GraphNode*) [nodes objectAtIndex:karina]).name = @"Carol";
-    ((GraphNode*) [nodes objectAtIndex:janie]).name = @"Nick";
-    ((GraphNode*) [nodes objectAtIndex:stephen]).name = @"Steve";
-    ((GraphNode*) [nodes objectAtIndex:lochai]).name = @"Joe";
-    ((GraphNode*) [nodes objectAtIndex:william]).name = @"Bill";
-    ((GraphNode*) [nodes objectAtIndex:greg]).name = @"Dave";
-    ((GraphNode*) [nodes objectAtIndex:scott]).name = @"Dan";
-    ((GraphNode*) [nodes objectAtIndex:dusty]).name = @"Brian";
-    ((GraphNode*) [nodes objectAtIndex:russ]).name = @"Kurt";
-    ((GraphNode*) [nodes objectAtIndex:cher]).name = @"Amy";
-    ((GraphNode*) [nodes objectAtIndex:andy]).name = @"Mike";
-    ((GraphNode*) [nodes objectAtIndex:kieran]).name = @"Rick";
-    ((GraphNode*) [nodes objectAtIndex:james]).name = @"Jim";
-    ((GraphNode*) [nodes objectAtIndex:nicole]).name = @"Laura";
-    ((GraphNode*) [nodes objectAtIndex:teresa]).name = @"Terry";
-    ((GraphNode*) [nodes objectAtIndex:molly]).name = @"Kate";
-    ((GraphNode*) [nodes objectAtIndex:lara]).name = @"Martha";
-    ((GraphNode*) [nodes objectAtIndex:kelly]).name = @"Jenny";
-    ((GraphNode*) [nodes objectAtIndex:ava]).name = @"Judy";
+    ((GraphNode*) [nodes objectAtIndex:bret]).name = @"Bret";
+    ((GraphNode*) [nodes objectAtIndex:roxy]).name = @"Roxy";
+    ((GraphNode*) [nodes objectAtIndex:eileen]).name = @"Eileen";
+    ((GraphNode*) [nodes objectAtIndex:martine]).name = @"Martine";
+    ((GraphNode*) [nodes objectAtIndex:rain]).name = @"Rain";
+    ((GraphNode*) [nodes objectAtIndex:christen]).name = @"Christen";
+    ((GraphNode*) [nodes objectAtIndex:danielle]).name = @"Danielle";
+    ((GraphNode*) [nodes objectAtIndex:oliver]).name = @"Oliver";
+    ((GraphNode*) [nodes objectAtIndex:ame]).name = @"Ame";
+    ((GraphNode*) [nodes objectAtIndex:david]).name = @"David";
+    ((GraphNode*) [nodes objectAtIndex:brian]).name = @"Brian";
+    ((GraphNode*) [nodes objectAtIndex:joh]).name = @"Joh";
     
-    [m_graph addEdgeFrom:bret to:roxy length:1.0f];
-    [m_graph addEdgeFrom:bret to:sappharia length:2.0f];
-    [m_graph addEdgeFrom:bret to:ida length:2.0f];
-    [m_graph addEdgeFrom:bret to:kashmira length:2.5f];
-    [m_graph addEdgeFrom:bret to:dena length:2.0f];
-    [m_graph addEdgeFrom:bret to:emily length:3.0f];
-    [m_graph addEdgeFrom:bret to:karina length:3.0f];
-    [m_graph addEdgeFrom:bret to:lisa length:3.5f];
-    [m_graph addEdgeFrom:bret to:janie length:4.0f];
+    [m_graph addEdgeFrom:bret to:roxy length:1.0];
+    [m_graph addEdgeFrom:bret to:eileen length:1.0];
+    [m_graph addEdgeFrom:bret to:martine length:2.0];
+    [m_graph addEdgeFrom:bret to:joh length:2.0];
+    [m_graph addEdgeFrom:bret to:christen length:2.0];
+
+    [m_graph addEdgeFrom:roxy to:brian length:3.0];
+
+    [m_graph addEdgeFrom:eileen to:oliver length:3.0];
     
-    [m_graph addEdgeFrom:roxy to:sappharia length:2.0f];
-    [m_graph addEdgeFrom:roxy to:ida length:2.0f];
-    [m_graph addEdgeFrom:roxy to:kashmira length:2.5f];
-    [m_graph addEdgeFrom:roxy to:dena length:2.5f];
-    [m_graph addEdgeFrom:roxy to:emily length:3.0f];
-    [m_graph addEdgeFrom:roxy to:karina length:3.0f];
-    [m_graph addEdgeFrom:roxy to:janie length:4.0f];
-    
-    [m_graph addEdgeFrom:roxy to:lochai length:2.5f];
-    [m_graph addEdgeFrom:roxy to:william length:2.5f];
-    [m_graph addEdgeFrom:roxy to:stephen length:4.0f];
-    
-    [m_graph addEdgeFrom:sappharia to:scott length:1.0f];
-    
-    [m_graph addEdgeFrom:ida to:dusty length:2.0f];
-    [m_graph addEdgeFrom:ida to:lochai length:2.5f];
-    
-    [m_graph addEdgeFrom:kashmira to:russ length:1.0f];
-    [m_graph addEdgeFrom:kashmira to:lochai length:2.5f];
-    
-    [m_graph addEdgeFrom:dena to:cher length:1.0f];
-    
-    [m_graph addEdgeFrom:lisa to:andy length:2.0f];
-    
-    [m_graph addEdgeFrom:emily to:lochai length:2.0f];
-    [m_graph addEdgeFrom:emily to:kieran length:1.0f];
-    [m_graph addEdgeFrom:emily to:greg length:3.0f];
-    
-    [m_graph addEdgeFrom:karina to:greg length:3.0f];
-    [m_graph addEdgeFrom:karina to:james length:1.0f];
-    [m_graph addEdgeFrom:karina to:lochai length:2.5f];
-    [m_graph addEdgeFrom:karina to:william length:3.0f];
-    
-    [m_graph addEdgeFrom:stephen to:nicole length:1.0f];
-    
-    [m_graph addEdgeFrom:lochai to:molly length:2.0f];
-    [m_graph addEdgeFrom:lochai to:lara length:1.0f];
-    [m_graph addEdgeFrom:lochai to:kelly length:2.0f];
-    [m_graph addEdgeFrom:lochai to:ava length:2.0f];
-    
-    [m_graph addEdgeFrom:william to:teresa length:1.0f];
-    
+    [m_graph addEdgeFrom:oliver to:ame length:1.0];
+
+    [m_graph addEdgeFrom:ame to:david length:2.0];
+
+    [m_graph addEdgeFrom:martine to:rain length:3.0];
+
+    [m_graph addEdgeFrom:christen to:danielle length:3.0];
+
     [m_graph initSolver];
     m_graph.focusNodeIndex = bret;
 }
