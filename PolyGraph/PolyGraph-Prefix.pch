@@ -1,0 +1,15 @@
+//
+// Prefix header for all source files of the 'Visualizer' target in the 'Visualizer' project
+//
+
+#import <Availability.h>
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <QuartzCore/QuartzCore.h>
+#endif
+
+#define AND &&
+#define OR  ||
+#define NOT !
