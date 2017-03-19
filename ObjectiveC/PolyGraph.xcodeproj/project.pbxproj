@@ -151,6 +151,11 @@
 		644DECAE1E7C3B4600066D95 /* PolyGraph */ = {
 			isa = PBXGroup;
 			children = (
+				646187551E7C3C3100884734 /* Algorithm2.h */,
+				646187561E7C3C3100884734 /* Algorithm2.m */,
+				644DECB21E7C3B4600066D95 /* AppDelegate.h */,
+				644DECB31E7C3B4600066D95 /* AppDelegate.m */,
+				644DECBB1E7C3B4600066D95 /* Assets.xcassets */,
 				646187581E7C3C3B00884734 /* BoxedIndex.h */,
 				646187591E7C3C3B00884734 /* BoxedIndex.m */,
 				6461875A1E7C3C3B00884734 /* Constants2.h */,
@@ -162,13 +167,17 @@
 				646187601E7C3C3B00884734 /* GraphEdge.m */,
 				646187611E7C3C3B00884734 /* GraphNode.h */,
 				646187621E7C3C3B00884734 /* GraphNode.m */,
+				644DECC01E7C3B4600066D95 /* Info.plist */,
 				646187631E7C3C3B00884734 /* InfoPlist.strings */,
+				644DECBD1E7C3B4600066D95 /* LaunchScreen.storyboard */,
+				644DECB81E7C3B4600066D95 /* Main.storyboard */,
 				646187641E7C3C3B00884734 /* MenuItem.h */,
 				646187651E7C3C3B00884734 /* MenuItem.m */,
 				646187661E7C3C3B00884734 /* MenuView.h */,
 				646187671E7C3C3B00884734 /* MenuView.m */,
 				646187681E7C3C3B00884734 /* Point2.h */,
 				646187691E7C3C3B00884734 /* Point2.m */,
+				646187761E7C3C3B00884734 /* PolyGraph-Prefix.pch */,
 				6461876A1E7C3C3B00884734 /* ShinyGradientView.h */,
 				6461876B1E7C3C3B00884734 /* ShinyGradientView.m */,
 				6461876C1E7C3C3B00884734 /* StringPickerView.h */,
@@ -181,17 +190,8 @@
 				646187731E7C3C3B00884734 /* Utility.m */,
 				646187741E7C3C3B00884734 /* Vector2.h */,
 				646187751E7C3C3B00884734 /* Vector2.m */,
-				646187761E7C3C3B00884734 /* PolyGraph-Prefix.pch */,
 				646187771E7C3C3B00884734 /* VisualizerView.h */,
 				646187781E7C3C3B00884734 /* VisualizerView.m */,
-				646187551E7C3C3100884734 /* Algorithm2.h */,
-				646187561E7C3C3100884734 /* Algorithm2.m */,
-				644DECB21E7C3B4600066D95 /* AppDelegate.h */,
-				644DECB31E7C3B4600066D95 /* AppDelegate.m */,
-				644DECB81E7C3B4600066D95 /* Main.storyboard */,
-				644DECBB1E7C3B4600066D95 /* Assets.xcassets */,
-				644DECBD1E7C3B4600066D95 /* LaunchScreen.storyboard */,
-				644DECC01E7C3B4600066D95 /* Info.plist */,
 			);
 			path = PolyGraph;
 			sourceTree = "<group>";
