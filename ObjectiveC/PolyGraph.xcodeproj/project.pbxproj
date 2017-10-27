@@ -30,7 +30,7 @@
 		646187861E7C3C3B00884734 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 646187731E7C3C3B00884734 /* Utility.m */; };
 		646187871E7C3C3B00884734 /* Vector2.m in Sources */ = {isa = PBXBuildFile; fileRef = 646187751E7C3C3B00884734 /* Vector2.m */; };
 		646187881E7C3C3B00884734 /* VisualizerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 646187781E7C3C3B00884734 /* VisualizerView.m */; };
-		64D0678C1E7C419B00BBE6BF /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 64D0678B1E7C419B00BBE6BF /* Assets */; };
+		64D3FC791FA2313900270188 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 64D3FC781FA2313900270188 /* Assets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,7 +99,7 @@
 		646187761E7C3C3B00884734 /* PolyGraph-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PolyGraph-Prefix.pch"; sourceTree = "<group>"; };
 		646187771E7C3C3B00884734 /* VisualizerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualizerView.h; sourceTree = "<group>"; };
 		646187781E7C3C3B00884734 /* VisualizerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisualizerView.m; sourceTree = "<group>"; };
-		64D0678B1E7C419B00BBE6BF /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
+		64D3FC781FA2313900270188 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = ../Assets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +130,7 @@
 		644DECA31E7C3B4600066D95 = {
 			isa = PBXGroup;
 			children = (
-				64D0678B1E7C419B00BBE6BF /* Assets */,
+				64D3FC781FA2313900270188 /* Assets */,
 				644DECAE1E7C3B4600066D95 /* PolyGraph */,
 				644DECC81E7C3B4600066D95 /* PolyGraphTests */,
 				644DECD31E7C3B4600066D95 /* PolyGraphUITests */,
@@ -323,7 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64D0678C1E7C419B00BBE6BF /* Assets in Resources */,
+				64D3FC791FA2313900270188 /* Assets in Resources */,
 				644DECBF1E7C3B4600066D95 /* LaunchScreen.storyboard in Resources */,
 				6461877E1E7C3C3B00884734 /* InfoPlist.strings in Resources */,
 				644DECBC1E7C3B4600066D95 /* Assets.xcassets in Resources */,
