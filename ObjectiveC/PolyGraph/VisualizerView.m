@@ -15,6 +15,7 @@
             break;
         case UIGestureRecognizerStateChanged:
             m_viewScale = m_savedViewScale * pinch.scale;
+            m_textAttributeDict[NSFontAttributeName] =  [UIFont fontWithName:@"Helvetica" size:m_viewScale * 0.25f];
             [self setNeedsDisplay];
             break;
         default:
@@ -176,6 +177,9 @@
         m_viewScale = 48.0f;
         m_viewCenter = [[Point2 alloc] initWithX:0.0f Y:0.0f];
         
+        // set up the text attributes
+        m_textAttributeDict = [NSMutableDictionary dictionaryWithDictionary:@{NSFontAttributeName:[UIFont fontWithName:@"Helvetica" size:m_viewScale * 0.25f], NSForegroundColorAttributeName: [UIColor blackColor]}];
+        
         [self buildTestGraph];
     }
     return self;
@@ -213,21 +217,12 @@
     CGContextFillEllipseInRect(contextRef, circleRect);
     CGContextStrokeEllipseInRect(contextRef, circleRect);
     
-    // draw the names
-    CGContextSetRGBFillColor (contextRef, 0.0f, 0.0f, 0.0f, 1.0f);
-    CGAffineTransform xform = CGAffineTransformMake(1.0, 0.0, 0.0, -1.0, 0.0, 0.0);
-    CGContextSetTextMatrix (contextRef, xform);
-    CGFloat fontSize = m_viewScale * 0.25f;
-    CGContextSelectFont(contextRef, "Helvetica", fontSize, kCGEncodingMacRoman);
-    CGPoint startTextPosition = CGContextGetTextPosition (contextRef);
-    CGContextSetTextDrawingMode(contextRef, kCGTextInvisible);
-    CGContextShowText(contextRef, [node.name UTF8String], node.name.length);
-    CGPoint endTextPosition = CGContextGetTextPosition (contextRef);
-    CGFloat textWidth = endTextPosition.x - startTextPosition.x;
-    
-    CGContextSetTextPosition(contextRef, nodeCenterPt.x - (textWidth * 0.5f), nodeCenterPt.y + circleDisplayRadius + fontSize);
-    CGContextSetTextDrawingMode(contextRef, kCGTextFill);
-    CGContextShowText(contextRef, [node.name UTF8String], node.name.length);
+    // draw the name
+    NSString*   name = node.name;
+    CGFloat textWidth = [name sizeWithAttributes:m_textAttributeDict].width;
+    CGFloat x = nodeCenterPt.x - (textWidth * 0.5f);
+    CGFloat y = nodeCenterPt.y + circleDisplayRadius * 1.15f;
+    [name drawAtPoint:CGPointMake(x, y) withAttributes:m_textAttributeDict];
 }
 
 - (void) drawRect:(CGRect)rect

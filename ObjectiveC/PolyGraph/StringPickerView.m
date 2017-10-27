@@ -82,11 +82,10 @@
          [toolbarView addSubview:cancelButton];
          [Utility yCenterView:cancelButton];
          */
-
         
         // create the done and cancel buttons
         UISegmentedControl* cancelButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObject:@"Cancel"]];
-        cancelButton.segmentedControlStyle = UISegmentedControlStyleBar;
+        //cancelButton.segmentedControlStyle = UISegmentedControlStyleBar;
         cancelButton.momentary = YES;
         cancelButton.tintColor = [UIColor colorWithRed:0.85f green:0.0f blue:0.0f alpha:1.0f];
         cancelButton.frame = CGRectMake(0, 0, 80.0f, cancelButton.frame.size.height);
@@ -95,7 +94,7 @@
         [toolbarView addSubview:cancelButton];
 
         UISegmentedControl* doneButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObject:@"Done"]];
-        doneButton.segmentedControlStyle = UISegmentedControlStyleBar;
+        //doneButton.segmentedControlStyle = UISegmentedControlStyleBar;
         doneButton.momentary = YES;
         doneButton.tintColor = [UIColor blueColor];
         doneButton.frame = CGRectMake(0, 0, 80.0f, cancelButton.frame.size.height);

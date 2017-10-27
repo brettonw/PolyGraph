@@ -9,20 +9,22 @@
 
 @interface VisualizerView : UIView <MenuViewDelegate>
 {
-    MenuView*           m_menuView;
-    StringPickerView*   m_stringPickerView;
+    MenuView*               m_menuView;
+    StringPickerView*       m_stringPickerView;
     
-    Graph*              m_graph;
+    Graph*                  m_graph;
     
-    Point2*             m_screenCenter;
-    Point2*             m_viewCenter;
-    CGFloat             m_viewScale;
+    Point2*                 m_screenCenter;
+    Point2*                 m_viewCenter;
+    CGFloat                 m_viewScale;
     
-    NSUInteger          m_touchMoved;
-    NSUInteger          m_touchedNodeIndex;
-    Point2*             m_savedViewCenter;
-    CGFloat             m_savedViewScale;
-    Point2*             m_touchStart;
+    NSUInteger              m_touchMoved;
+    NSUInteger              m_touchedNodeIndex;
+    Point2*                 m_savedViewCenter;
+    CGFloat                 m_savedViewScale;
+    Point2*                 m_touchStart;
+    
+    NSMutableDictionary*    m_textAttributeDict;
 }
 
 @end

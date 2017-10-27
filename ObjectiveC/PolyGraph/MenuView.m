@@ -21,9 +21,9 @@
         [itemButton setTitle:label forState:UIControlStateNormal];
         [itemButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [itemButton setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
-        itemButton.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+        itemButton.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
         itemButton.titleLabel.numberOfLines = 0;
-        itemButton.titleLabel.textAlignment = UITextAlignmentCenter;
+        itemButton.titleLabel.textAlignment = NSTextAlignmentCenter;
     }
     itemButton.tag = itemTag;
     [itemButton addTarget:self action:@selector(buttonActionHandler:) forControlEvents:UIControlEventTouchUpInside];
